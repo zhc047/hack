@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <link href="jquery.mobile-1.4.2.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="flexslider.css"/>
+    <script src="jquery.min.js" type="text/javascript"></script>
+    <script src="jquery-1.8.2.min.js" type="text/javascript"></script>
+    <script src="jquery.mobile-1.4.2.min.js" type="text/javascript"></script>
+     <script type="text/javascript" src="JS/jquery.flexslider-min.js"></script>
+    <script type="text/javascript">
+    $(function(){
+        $('.flexslider').flexslider({animation: "slide"});
+    function resetColor(){
+		$(".ui-bar-a").css({"border":"1px solid #DDD","-webkit-box-shadow":"inset 0px 0px 0px #DDD","-moz-box-shadow":"inset 0px 0px 8px #DDD","box-shadow":"inset 0px 0px 0px #DDD"});
+	}
+	
+	$(".ui-bar-a").bind("click",function(){
+        resetColor();
+		$(this).css({"border":"1px solid #A8A8A8","-webkit-box-shadow":"inset 0px 0px 8px #666666","-moz-box-shadow":"inset 0px 0px 8px #666666","box-shadow":"inset 0px 0px 8px #666666"});		
+		
+	})
+	
+	});
+</script>
+    <style> 
+	.link_color a:link{color:#000;text-decoration:none;font-weight:normal;}
+	.link_color a:visited{color:#000;text-decoration:none;font-weight:normal;}
+	.link_color a:active{color:#000;text-decoration:none;font-weight:normal;}
+	.nav_char_form {height:60px;font-size:12px;line-height:22px;font-weight:normal;text-align:center;}
+	.nav_background {background:#43afdf;width:40px;height:40px;border-radius:20px;border:1px #fff;font-weight:normal;}
+    .change_while_click{border:1px solid #A1A1A1;-webkit-box-shadow:inset 2px 2px 8px #666666;}
+	
+    </style>
+</head>
+<body>
+<div data-role="page" data-theme="a" id="MainPage" style="background:#fff">
+
+<!--header-->
+   <div data-role="header" id="webPageHead" data-theme="a" style="height:120px;border:0;background:#fff;">   
+      <label><img src="hackimages/waterwise.png" style="float:left;padding-top:9px; margin-left:20px;width:400px;height:100px;display:inline-block;"/></label>
+      <label><img src="hackimages/garden.png" style="float:left;padding-top:9px; margin-left:20px;width:400px;height:100px;display:inline-block;"/></label>
+
+   </div>
+
+<!--Banner-->
+   <div data-role="content" style="border:40;margin:40;padding:40;">
+      <div class="flexsliderBox">
+         <div class="flexslider">
+           <ul class="slides">
+           <li>
+                <a href="#"><img src="hackimages/DroughtWithText.jpg" ></a>
+            </li>
+            <li>
+                 <a href="#"><img src="hackimages/watergrassbluetext.jpg" ></a>
+            </li>
+            <li>
+                 <a href="#"><img src="hackimages/3.jpg" ></a>
+            </li>
+              <li>
+                 <a href="#"><img src="hackimages/4.jpg" ></a>
+            </li>
+            </ul>
+        </div>
+   </div>
+<!--game-->
+   <div>
+
+     <div style = "margin:20px;"><img src="hackimages/start.png"></div>
+     <div><center><img src="hackimages/game.jpg"></center></div>
+   </div>
+
+<!--sort method-->
+   <div data-theme="a" style="background-color:#fff; height:50px;border:0;margin-top:20px;">
+      <label style="display:block;float:right;color:#000;width:100px;height:15px;line-height:30px;font-size:15px;margin:0;padding:0;margin-left:30px;text-decoration:underline;"><a>most popular</a></label>
+      <label style="display:block;float:right;color:#000;width:100px;height:15px;line-height:30px;font-size:15px;margin:0;padding:0;margin-left:30px;text-decoration:underline;"><a>less water use</a></label>
+      <label style="display:block;float:right;color:#000;width:100px;height:15px;line-height:30px;font-size:15px;margin:0;padding:0;margin-left:30px;text-decoration:underline;"><a>most recent</a></label>
+   </div>
+
+<!--show work-->
+   <div class="ui-grid-c" style="margin-top:0;padding:0 5px;height: 200px;">  
+   <div class="ui-block-a link_color" >
+       <div class="nav_char_form" style="font-size:15px;"> 
+       <center><div><img src="hackimages/work1.png" style="padding-top:9px; width:200px;height:120px;display:block;"/><div></center>Jason's Garden
+    </div></div>
+    <div class="ui-block-b link_color">
+       <div class="nav_char_form" style="font-size:15px;">
+       <center><div><img src="hackimages/work2.png" style="padding-top:9px; width:200px;height:120px;display:block;"/><div></center>Thomson's Garden
+     </div></div>
+    <div class="ui-block-c link_color">
+       <div class="nav_char_form" style="font-size:15px;">
+       <center><div><img src="hackimages/work3.png" style="padding-top:9px; width:200px;height:120px;display:block;"/><div></center>Strawberry Garden
+    </div></div>
+    <div class="ui-block-d link_color">
+       <div class="nav_char_form" style="font-size:15px;">
+       <center><div><img src="hackimages/work4.png" style="padding-top:9px; width:200px;height:120px;display:block;"/><div></center>Carrot Garden
+    </div></div>
+   </div>
+   
+   
+<!--footer-->
+<div style="margin-top:20px;height:50px;width:100%;background:#e3e3e3;">   
+   <label style="display:inline-block;text-align:center;float:right;color:#000;width:280px;height:15px;line-height:30px;font-size:15px;margin:0;padding:0;margin-left:30px;">Copyright © 2015 ConvoyEatmates</label> 
+   <label style="display:inline-block;text-align:center;float:right;color:#000;width:60px;height:15px;line-height:30px;font-size:15px;margin:0;padding:0;margin-left:30px;text-decoration:underline;"><a>Feedback</a></label>
+    <label style="display:inline-block;text-align:center;float:right;color:#000;width:50px;height:15px;line-height:30px;font-size:15px;margin:0;padding:0;margin-left:30px;text-decoration:underline;"><a>Help</a></label>
+    <label style="display:inline-block;text-align:center;float:right;color:#000;width:65px;height:15px;line-height:30px;font-size:15px;margin:0;padding:0;margin-left:30px;text-decoration:underline;"><a>About Us</a></label>
+   
+</div>
+
+</body>
+</html>
